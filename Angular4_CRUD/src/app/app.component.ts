@@ -26,7 +26,6 @@ export class AppComponent {
 
   deletePerson(id) {
    this.personData.splice(id, 1);
-   
   }
 
   editPerson(data) {
@@ -34,7 +33,7 @@ export class AppComponent {
     this.removePerson = false;
     this.updatePersonDetails = true;
   }
-  updatePerson(usergit) {
+  updatePerson(user) {
     this.removePerson = true;
     this.updatePersonDetails = false;
     this.user = {};
