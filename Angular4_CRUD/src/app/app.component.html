@@ -1,4 +1,8 @@
-<div class="container">
+
+
+<div class="container" style="background-color: rgb(204, 223, 243)">
+    <b><H3 style="color:blue">Angular 4 CRUD Operation Basic Example....!</H3></b>
+
 <div class="row">
   <div class="col-md-12">
     <form  #portal="ngForm"> 
@@ -16,12 +20,13 @@
           </div>
     </form>
   </div>
-  <button (click) = addPerson(portal) class="btn btn-success" *ngIf="removePerson">Add Button</button>
+  <button (click) = addPerson(portal) class="btn btn-success" style="background-color: blue" *ngIf="removePerson">Add Button</button>
   <button (click) = updatePerson(portal) class="btn btn-success" *ngIf="updatePersonDetails">Update Button</button>
-
-  <table class="table">
-    <thead>
-      <tr>
+<br>
+<br>
+  <table class="table table-striped table-bordered">
+    <thead class="mdb-color darken-3">
+      <tr class="text-white" style="background-color:grey">
         <th>ID</th>
         <th>NAME</th>
         <th>AGE</th>
